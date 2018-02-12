@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title> Find workout </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../includes/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Boogaloo" rel="stylesheet">
+    <script src="../includes/script.js"> </script>
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+
+</head>
+<body id="find">
+<div id="wrapper">
+    <header>
+        <div>
+            <h1> Find workout </h1>
+            <i id="profile" class="fas fa-user-circle fa-lg"></i>
+            <span id="logout">Logout</span>
+        </div>
+    </header>
+    <main id="rect">
+            <section class="buttonJoin">
+                <svg>
+                    <circle id="first" cx="10%" cy="50%" r="4%" ></circle>
+                    <text id="one" x="10%" y="50%">1</text>
+                    <line id="line1" x1="12.8%" y1="50%" x2="35%" y2="50%" />
+
+                    <circle id="second"   cx="35%" cy="50%" r="4%" ></circle>
+                    <text id="two" x="35%" y="50%">2</text>
+                    <line id="line2" x1="38%" y1="50%" x2="63%" y2="50%" />
+
+                    <circle id="third"  cx="65%" cy="50%" r="4%"></circle>
+                    <text id="three" x="65%" y="50%" >3</text>
+                    <line id="line2" x1="68%" y1="50%" x2="90%" y2="50%" />
+
+                    <circle id="fourth"  cx="90%" cy="50%" r="4%"></circle>
+                    <text id="four" x="90%" y="50%" >4</text>
+
+                </svg>
+            </section>
+        <h2>Workout type</h2>
+        <section id="recsFind">
+
+        </section>
+        <section class="date">
+            <h2>Date</h2>
+            <input type="datetime-local" name="bdaytime">
+        </section>
+        <section class="location">
+            <h2>location</h2>
+            <form action="/action_page.php">
+                <select class="custom-select">
+                    <option selected>Bat Yam</option>
+                    <option value="1">Givatayim</option>
+                    <option value="2">Ramat Gan</option>
+                    <option value="3">Tel Aviv</option>
+                </select>
+            </form>
+        </section>
+
+        <section id="contFind">
+            <button onclick="nextPage(1);">Continue</button>
+        </section>
+    </main>
+    <footer>
+        <div class="icon-bar">
+            <a href="../index.html"> <i class="fas fa-home"><span>Home</span></i></a>
+            <a href="../CreateNew/createNew.html"> <i class="fas fa-edit"><span>Create</span></i></a>
+            <a href="#"> <i class="fas fa-users"><span>Join</span></i></a>
+            <a href="../vip/history/history.html"> <i class="fas fa-history"><span>History</span></i></a>
+            <a href="../results/results.html"> <i class="fas fa-calendar-check"><span>Results</span></i></a>
+        </div>
+
+    </footer>
+</div>
+<script>
+    loadRec(6, "titleFind");
+</script>
+</body>
+</html>
